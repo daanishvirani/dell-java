@@ -66,13 +66,14 @@ public class Statistics {
 		return numElements;
 	}
 	
-	public static int average(Integer[] a) {
-		int total = 0;
+	public static double average(Integer[] a) {
+		double total = 0;
 		for (int i = 0; i <a.length; i++) {
 			total += a[i];
 		}
-		int numElements = a.length;
-		int average = total/numElements;
+		//int numElements = a.length;
+		//int average = total/numElements;
+		double average = total / a.length;
 		return average;
 	}
 	
